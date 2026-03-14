@@ -12,6 +12,12 @@ Each folder in this repository represents a standalone Flutter project with a un
 | :--- | :--- | :--- |
 | **[Flutter Posts App](./Flutter%20Posts%20App)** | MVVM / Clean Architecture | A demonstration of managing post data with a focus on separation of concerns. |
 
+## 🧠 Algorithmic Mastery
+
+Beyond high-level architecture, this repository also tracks problem-solving skills through:
+
+- **[Leetcode-flutter-Al-Edrisy](./Leetcode-flutter-Al-Edrisy)**: A collection of data structures and algorithms solved using Dart.
+
 ## 🚀 Key Learning Objectives
 
 - **Architecture Modeling**: Comparing different designs like BLoC, Provider, MVVM, and Clean Architecture.
