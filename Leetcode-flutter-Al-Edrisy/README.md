@@ -6,7 +6,7 @@ This section documents my progress on LeetCode problems, implemented in Dart, to
 
 | Difficulty | Solved | Target | Progress |
 | :--- | :---: | :---: | :--- |
-| **🟢 Easy** | 2 | 100 | `██░░░░░░░░░░░░░░░░░░` 2% |
+| **🟢 Easy** | 0 | 100 | `░░░░░░░░░░░░░░░░░░░░` 0% |
 | **🟡 Medium** | 0 | 50 | `░░░░░░░░░░░░░░░░░░░░` 0% |
 | **🔴 Hard** | 0 | 10 | `░░░░░░░░░░░░░░░░░░░░` 0% |
 
@@ -15,8 +15,8 @@ This section documents my progress on LeetCode problems, implemented in Dart, to
 ## 📂 Solutions Repo
 
 ### 🧩 Easy Problems
-- [001. Two Sum](./easy/001_two_sum.dart)
-- [009. Palindrome Number](./easy/009_palindrome_number.dart)
+- [001. Two Sum](./easy/001_two_sum.dart) (TODO)
+- [009. Palindrome Number](./easy/009_palindrome_number.dart) (TODO)
 
 ### 🧩 Medium Problems
 - *(Work in progress...)*
