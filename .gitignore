@@ -1,0 +1,53 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch.json and gdbinit, which are useful for setting up
+# debug sessions. It also contains settings.json, which contains settings for the
+# VS Code editor. These should be tracked.
+# .vscode/
+
+# Flutter/Dart related
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/.pub/
+**/pubspec.lock
+
+# Android related
+**/android/**/generated/
+**/android/*/build/
+**/android/*/local.properties
+**/android/*/*.iml
+**/android/*/*.jks
+**/android/*/*.keystore
+**/android/**/google-services.json
+
+# iOS/Mac related
+**/ios/Flutter/.last_build_id
+**/ios/Pods/
+**/ios/Runner/GeneratedPluginRegistrant.[mh]
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/Runner.xcworkspace/xcuserdata/
+**/macosx/Flutter/Generated.xcconfig
+**/macosx/Flutter/flutter_export_environment.sh
+
+# Web related
+node_modules/
