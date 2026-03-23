@@ -2,12 +2,12 @@
 
 This repository demonstrates the core concepts of state management in Flutter, focusing on local state using `StatefulWidget` and the `setState()` method.
 
-## 🚀 Getting Started
+## Getting Started
 
 1.  **Initialize Project**: `flutter create lab04_state`
 2.  **Run Application**: `flutter run`
 
-## 📚 Concepts Covered
+## Concepts Covered
 
 ### 1. StatefulWidget vs. StatelessWidget
 - **StatelessWidget**: Immutable, used for UI that doesn't change based on data (e.g., icons, labels).
