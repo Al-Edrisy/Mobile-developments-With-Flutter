@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/counter_screen.dart';
 import 'screens/lifecycle_screen.dart';
+import 'screens/todo_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -41,6 +42,14 @@ class HomeMenu extends StatelessWidget {
                 MaterialPageRoute(builder: (_) => const LifecycleScreen()),
               ),
               child: const Text('Part 3 — Lifecycle'),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const TodoScreen()),
+              ),
+              child: const Text('Part 5 — To-Do List'),
             ),
           ],
         ),
