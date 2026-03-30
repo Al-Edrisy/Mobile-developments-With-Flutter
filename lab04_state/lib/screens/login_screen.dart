@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../services/auth_service.dart';
+import '../main.dart'; // To access HomeMenu
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -13,7 +15,6 @@ class _LoginScreenState extends State<LoginScreen> {
   String? _errorMessage;
 
   void _handleLogin() {
-    // Logic will be added in Stage 3
     final String username = _usernameController.text;
     final String password = _passwordController.text;
     
@@ -23,11 +24,23 @@ class _LoginScreenState extends State<LoginScreen> {
       });
       return;
     }
+
+    final bool isValid = AuthService.validateUser(username, password);
     
-    // For Stage 2, just showing UI and a simple state change
-    setState(() {
-      _errorMessage = 'Login validation logic coming in next stage';
-    });
+    if (isValid) {
+      setState(() {
+        _errorMessage = null;
+      });
+      // Navigate to Home and remove Login from stack
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const HomeMenu()),
+      );
+    } else {
+      setState(() {
+        _errorMessage = 'Invalid username or password';
+      });
+    }
   }
 
   @override
