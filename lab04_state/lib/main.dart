@@ -3,6 +3,7 @@ import 'screens/counter_screen.dart';
 import 'screens/lifecycle_screen.dart';
 import 'screens/todo_screen.dart';
 import 'screens/login_screen.dart';
+import 'screens/not_found_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -83,6 +84,15 @@ class HomeMenu extends StatelessWidget {
                   MaterialPageRoute(builder: (_) => const TodoScreen()),
                 ),
                 child: const Text('Part 5 — To-Do List'),
+              ),
+              const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const NotFoundScreen()),
+                ),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.red.shade100),
+                child: const Text('404'),
               ),
             ],
           ),
