@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/counter_screen.dart';
 import 'screens/lifecycle_screen.dart';
 import 'screens/todo_screen.dart';
+import 'screens/login_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeMenu(),
+      home: LoginScreen(),
     );
   }
 }
