@@ -11,6 +11,7 @@ Each folder in this repository represents a standalone Flutter project with a un
 | Project Name | Architecture / Concept | Description |
 | :--- | :--- | :--- |
 | **[Flutter Posts App](./Flutter%20Posts%20App)** | MVVM / Clean Architecture | A demonstration of managing post data with a focus on separation of concerns. |
+| **[Auth & Navigation](./auth_navigation)** | Authentication & Structured Navigation | A project implementing login simulation, protected routing, and custom error handling. |
 
 ## 🧠 Algorithmic Mastery
 
@@ -36,9 +37,15 @@ Beyond high-level architecture, this repository also tracks problem-solving skil
    flutter pub get
    ```
 3. Run the application:
-   ```bash
+
    flutter run
    ```
-
+   on mobile device or emulator
+   ```bash
+   xcrun simctl boot 11391206-C502-4766-B116-65D47FCB1FE3 && open -a Simulator
+   flutter devices
+   xcrun simctl list devices | grep "Booted"
+   flutter run -d 11391206-C502-4766-B116-65D47FCB1FE3
+   ```
 ---
 *Created with ❤️ for the Flutter Development Course.*
