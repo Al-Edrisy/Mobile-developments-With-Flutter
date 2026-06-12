@@ -5,7 +5,21 @@
 
 class Solution {
   List<int> twoSum(List<int> nums, int target) {
-    // TODO: Implement your solution here
+    // Use a HashMap to store value -> index mapping
+    Map<int, int> numMap = {};
+    
+    for (int i = 0; i < nums.length; i++) {
+      int complement = target - nums[i];
+      
+      // Check if complement exists in map
+      if (numMap.containsKey(complement)) {
+        return [numMap[complement]!, i];
+      }
+      
+      // Store current number and its index
+      numMap[nums[i]] = i;
+    }
+    
     return [];
   }
 }
